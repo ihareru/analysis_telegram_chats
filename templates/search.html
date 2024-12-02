@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Messages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Search Messages</h1>
+        <form action="/search" method="post">
+            <div class="mb-3">
+                <label for="chat_id" class="form-label">Chat ID</label>
+                <input type="text" class="form-control" name="chat_id" id="chat_id" required>
+            </div>
+            <div class="mb-3">
+                <label for="keyword" class="form-label">Keyword</label>
+                <input type="text" class="form-control" name="keyword" id="keyword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+</body>
+</html>
